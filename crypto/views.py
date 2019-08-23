@@ -26,4 +26,5 @@ def prices(request):
 
 
     else:
-        return render(request, 'prices.html', {})
+        notfound = "Enter a crypto Currency symbol into the form above ..."
+        return render(request, 'prices.html', {'notfound': notfound})
